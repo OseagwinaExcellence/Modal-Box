@@ -10,7 +10,11 @@ body {
           color: $label-text-color;
           display: $label-dis;
           cursor: $label-mouse;
-         
+          margin-top: $open-transform-y * 2;
+          translate: ($close-translate-x / 7);
+          animation:$animate-name;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
      }
      .open:hover {
           background-color: $label-bg-2;
@@ -22,9 +26,20 @@ body {
                position: $close-icon-post;
                transform: translateY($close-translate-y);
                translate:($close-translate-x);
-               
           }
 }
+
+
+@keyframes  open_move{
+     0% {
+          transform: translateY($modal-position-left);
+     }
+     50% {
+          transform: translateY($open-transform-y / 2);
+     }
+}
+
+
 
 /*Checkbox*/
 .checkbox {

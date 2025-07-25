@@ -13,6 +13,11 @@ body .open {
   color: white;
   display: inline-block;
   cursor: pointer;
+  margin-top: 50px;
+  translate: 42.1428571429px;
+  animation: open_move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 body .open:hover {
   background-color: rgb(103, 160, 103);
@@ -26,6 +31,14 @@ body .close {
   translate: 295px;
 }
 
+@keyframes open_move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12.5px);
+  }
+}
 /*Checkbox*/
 .checkbox {
   display: none;

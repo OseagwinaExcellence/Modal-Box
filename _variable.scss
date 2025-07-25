@@ -39,10 +39,15 @@ $label-padding: 2em;
 $label-dis: inline-block;
 $label-mouse: pointer;
 $label-close: $label-padding;
+//open
+$open-transform-y: 25px;
 //close
 $close-icon-post: absolute;
 $close-translate-x: 295px;
 $close-translate-y: -16px;
+//*Open-Btn-animate
+
+$animate-name: open_move;
 //labelhover
 $label-bg-2: rgb(103, 160, 103);
 $label-transition: background-color ease-in 0.3s;
