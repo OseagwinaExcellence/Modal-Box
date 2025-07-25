@@ -1,5 +1,6 @@
 /*Body*/
 $font-fam: monospace;
+$body-color: rgb(255, 252, 252);
 
 
 /*checkbox*/
@@ -9,7 +10,36 @@ $check-display: none;
 //modal-overlay
 $modal-overlay-opacity: 0;
 $modal-overlay-visibility: hidden;
+$modal-bg: rgba(0, 0, 0, 0.162);
+$modal-position-top: 0;
+$modal-position--right: 0;
+$modal-position-left: 0;
+$modal-position-bottom: 0;
+$modal-position: fixed;
+//modalbox-content
+$modal-display: flex;
+$modal-flex-direct: column;
+$modal-width: 300px;
+$modal-margin: 14rem auto;
+$modal-bg-2: white;
+$modal-rad: 10px;
 
 //checkbox + Modal-overlay*/
 $modal-check-vis: visible;
 $modal-check-opacity: 1;
+
+/*Label-Btn*/
+$label-bg: lightgreen;
+$label-text-color: white;
+$label-padding: 2em;
+$label-dis: inline-block;
+$label-mouse: pointer;
+$label-close: $label-padding;
+//close
+$close-icon-post: absolute;
+$close-icon-right: 35em;
+$close-icon-bottom: 21rem;
+//labelhover
+$label-bg-2: rgb(103, 160, 103);
+$label-transition: background-color ease-in 0.3s;
+

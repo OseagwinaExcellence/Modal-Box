@@ -3,6 +3,27 @@
 /*Body*/
 body {
      font-family: $font-fam;
+     background-color: $body-color;
+      .open {
+          background-color: $label-bg;
+          padding: $label-padding / 4 calc($label-padding * 1);
+          color: $label-text-color;
+          display: $label-dis;
+          cursor: $label-mouse;
+         
+     }
+     .open:hover {
+          background-color: $label-bg-2;
+          transition: $label-transition;
+     }
+      .close {
+               width: $modal-width / 7;
+               cursor: $label-mouse;
+               position: $close-icon-post;
+               right: $close-icon-right;
+               bottom: $close-icon-bottom;
+               
+          }
 }
 
 /*Checkbox*/
@@ -10,9 +31,26 @@ body {
      display: $check-display;
 }
 
+/*Modal*/
+//modal-overlay
 .modal-overlay {
      opacity: $modal-overlay-opacity;
      visibility: $modal-overlay-visibility;
+     background-color: $modal-bg;
+     top: $modal-position-top;
+     left: $modal-position-left;
+     right: $modal-position--right;
+     bottom: $modal-position-bottom;
+     position: $modal-position;
+     .modal-box {
+          display: $modal-display;
+          flex-direction: $modal-flex-direct;
+          width: $modal-width;
+          margin: $modal-margin;
+          background-color: $modal-bg-2;
+          padding: $label-padding;
+          border-radius: $modal-rad;
+     }
 }
 
 /*Declaration*/
@@ -20,3 +58,7 @@ body {
      opacity: $modal-check-opacity;
      visibility: $modal-check-vis;
 }
+
+
+
+ 

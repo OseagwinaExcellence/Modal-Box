@@ -1,9 +1,29 @@
 /*Body*/
 /*checkbox*/
 /*Modal Box*/
+/*Label-Btn*/
 /*Body*/
 body {
   font-family: monospace;
+  background-color: rgb(255, 252, 252);
+}
+body .open {
+  background-color: lightgreen;
+  padding: 0.5em 2em;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+body .open:hover {
+  background-color: rgb(103, 160, 103);
+  transition: background-color ease-in 0.3s;
+}
+body .close {
+  width: 42.8571428571px;
+  cursor: pointer;
+  position: absolute;
+  right: 35em;
+  bottom: 21rem;
 }
 
 /*Checkbox*/
@@ -11,9 +31,25 @@ body {
   display: none;
 }
 
+/*Modal*/
 .modal-overlay {
   opacity: 0;
   visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.162);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.modal-overlay .modal-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 14rem auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
 }
 
 /*Declaration*/
