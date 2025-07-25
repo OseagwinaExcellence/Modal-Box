@@ -1,3 +1,23 @@
-label {
-  font-size: 100px;
+/*Body*/
+/*checkbox*/
+/*Modal Box*/
+/*Body*/
+body {
+  font-family: monospace;
+}
+
+/*Checkbox*/
+.checkbox {
+  display: none;
+}
+
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*Declaration*/
+.checkbox:checked + .modal-overlay {
+  opacity: 1;
+  visibility: visible;
 }

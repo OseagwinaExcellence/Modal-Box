@@ -1,1 +1,15 @@
-$font-size: 100px;
+/*Body*/
+$font-fam: monospace;
+
+
+/*checkbox*/
+$check-display: none;
+
+/*Modal Box*/
+//modal-overlay
+$modal-overlay-opacity: 0;
+$modal-overlay-visibility: hidden;
+
+//checkbox + Modal-overlay*/
+$modal-check-vis: visible;
+$modal-check-opacity: 1;
