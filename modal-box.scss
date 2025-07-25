@@ -20,8 +20,8 @@ body {
                width: $modal-width / 7;
                cursor: $label-mouse;
                position: $close-icon-post;
-               right: $close-icon-right;
-               bottom: $close-icon-bottom;
+               transform: translateY($close-translate-y);
+               translate:($close-translate-x);
                
           }
 }
@@ -50,6 +50,8 @@ body {
           background-color: $modal-bg-2;
           padding: $label-padding;
           border-radius: $modal-rad;
+          border: $modal-rad-color;
+          transform: $modal-transform-3;
      }
 }
 
@@ -61,4 +63,7 @@ body {
 
 
 
- 
+ .checkbox:checked + .modal-overlay .modal-box {
+     transform: $modal-transform-2;
+     transition: $modal-translate;
+ }

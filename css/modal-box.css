@@ -22,8 +22,8 @@ body .close {
   width: 42.8571428571px;
   cursor: pointer;
   position: absolute;
-  right: 35em;
-  bottom: 21rem;
+  transform: translateY(-16px);
+  translate: 295px;
 }
 
 /*Checkbox*/
@@ -50,10 +50,17 @@ body .close {
   background-color: white;
   padding: 2em;
   border-radius: 10px;
+  border: 1px black solid;
+  transform: translateY(-1000px);
 }
 
 /*Declaration*/
 .checkbox:checked + .modal-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+.checkbox:checked + .modal-overlay .modal-box {
+  transform: translateY(0px);
+  transition: 0.4s ease-in-out transform;
 }

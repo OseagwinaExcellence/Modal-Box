@@ -23,6 +23,10 @@ $modal-width: 300px;
 $modal-margin: 14rem auto;
 $modal-bg-2: white;
 $modal-rad: 10px;
+$modal-rad-color: 1px black solid;
+$modal-transform-2: translateY(0px);
+$modal-translate: 0.4s ease-in-out transform;
+$modal-transform-3: translateY(-1000px);
 
 //checkbox + Modal-overlay*/
 $modal-check-vis: visible;
@@ -37,8 +41,8 @@ $label-mouse: pointer;
 $label-close: $label-padding;
 //close
 $close-icon-post: absolute;
-$close-icon-right: 35em;
-$close-icon-bottom: 21rem;
+$close-translate-x: 295px;
+$close-translate-y: -16px;
 //labelhover
 $label-bg-2: rgb(103, 160, 103);
 $label-transition: background-color ease-in 0.3s;
